@@ -56,6 +56,7 @@ export default function ShopBanner() {
 
             >
                 {
+                    
                     slideData.map((item,index) => 
 
                     <SwiperSlide key={index} className='relative'>
