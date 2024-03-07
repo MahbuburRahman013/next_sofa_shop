@@ -56,9 +56,9 @@ export default function ShopBanner() {
 
             >
                 {
-                    slideData.map(item => 
+                    slideData.map((item,index) => 
 
-                    <SwiperSlide className='relative'>
+                    <SwiperSlide key={index} className='relative'>
                         <img className='z-20 absolute top-0 left-0 right-0 bottom-0 m-auto ' src={item.img} />
                         <h1 className='absolute text-3xl left-44 bottom-0 font-bold z-30'>{item.discount}% OFF</h1>
                     </SwiperSlide>

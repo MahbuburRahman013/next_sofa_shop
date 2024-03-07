@@ -76,7 +76,7 @@ export default function Navbar() {
             <div className={`lg:hidden absolute z-20 block duration-500 py-5 bg-transparent backdrop-blur-md rounded -translate-y-80 ${!isTrue && 'translate-y-0'} w-[90%] top-20 left-0 right-0 mx-auto`}>
 
                 {
-                    links.map((item, index) => <Link onClick={() => setIsTrue(!isTrue)} href={item.path}><li className={`${pathname == item.path ? 'bg-[#d6dfd6] rounded' : ''} py-2 px-7  font-semibold w-full text-center list-none`} key={index}>{item.linkName}</li></Link>)
+                    links.map((item, index) => <Link key={index} onClick={() => setIsTrue(!isTrue)} href={item.path}><li className={`${pathname == item.path ? 'bg-[#d6dfd6] rounded' : ''} py-2 px-7  font-semibold w-full text-center list-none`} key={index}>{item.linkName}</li></Link>)
                 }
 
             </div>

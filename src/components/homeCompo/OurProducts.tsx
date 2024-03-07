@@ -1,7 +1,7 @@
 "use client"
 import { Product } from "@/dataFeatch/allProducts";
 import Title from "../Title";
-import ReactStars from "react-rating-stars-component";
+// import ReactStars from "react-rating-stars-component";
 import { Button } from "../ui/button";
 import { useState } from "react";
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "../ui/select";
@@ -74,7 +74,7 @@ export default function OurProducts({ allData }: { allData: Product[] }) {
                                             <p className='font-semibold'>{item.name}</p>
                                             <p>${item.price}</p>
                                         </div>
-                                        <div>
+                                        {/* <div>
                                             <ReactStars
                                                 count={5}
                                                 value={item.rating}
@@ -85,7 +85,7 @@ export default function OurProducts({ allData }: { allData: Product[] }) {
                                                 fullIcon={<i className="fa fa-star"></i>}
                                                 activeColor="#ffd700"
                                             />
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             )
