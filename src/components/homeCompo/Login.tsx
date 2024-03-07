@@ -94,7 +94,7 @@ const handleSignIn = (e:any)=> {
                                     <CardHeader>
                                         <CardTitle>Sign In</CardTitle>
                                         <CardDescription>
-                                            Sign in your account here. Click Sign In when you're done.
+                                            Sign in your account here. Click Sign In when you are done.
                                         </CardDescription>
                                     </CardHeader>
                                     <form onSubmit={handleSignIn}>
@@ -119,7 +119,7 @@ const handleSignIn = (e:any)=> {
                                     <CardHeader>
                                         <CardTitle>Sign Up</CardTitle>
                                         <CardDescription>
-                                            Create your account here. Click Sign Up when you're done.
+                                            Create your account here. Click Sign Up when you are done.
                                         </CardDescription>
                                     </CardHeader>
                                     <form onSubmit={handleSignUp}>
