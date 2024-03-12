@@ -41,7 +41,7 @@ const handleSignUp = (e:any)=> {
         password
     }
 
-    axios.post('http://localhost:5000/jwt', userData).then(res=> {
+    axios.post('https://sofaserver.vercel.app/jwt', userData).then(res=> {
         if(res.data.token){
             localStorage.setItem('token',res.data);
         }else{
@@ -62,7 +62,7 @@ const handleSignIn = (e:any)=> {
         password
     }
 
-    axios.post('http://localhost:5000/login', userData).then(res=> {
+    axios.post('https://sofaserver.vercel.app/login', userData).then(res=> {
         if(res.data.success){
             toast.success(res.data.success)
         }else{
